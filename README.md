@@ -45,7 +45,7 @@ http://localhost:3000/posts
 
 -- Note on Deployment
 This project uses JSON-Server, which runs only on your local machine.
-That means hosted versions (like GitHub Pages) will not function correctly unless connected to a live API.
+That means hosted versions (like GitHub Pages) will not function well unless connected to a live API.
 
 If you would like to test this project, please follow the local instructions above.
 
