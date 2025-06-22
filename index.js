@@ -8,7 +8,7 @@ const editContent = document.querySelector("#edit-content");
 let currentPostId = null;
 
 // Fetch and display all posts
-function displayPosts(DOMContentLoaded) {
+function displayPosts() {
   fetch(baseURL)
     .then((res) => res.json())
     .then((posts) => {
@@ -20,9 +20,6 @@ function displayPosts(DOMContentLoaded) {
         postList.appendChild(postItem);
       });
 
-      if (DOMContentLoaded) {
-        postDetail.innerHTML = "<p>Select a post to view details.</p>";
-      }
     });
 }
 
@@ -92,7 +89,7 @@ editForm.addEventListener("submit", (e) => {
     });
 });
 
-document.querySelector("#cancel-edit-btn").addEventListener("click", () => {
+document.querySelector("#cancel-edit").addEventListener("click", () => {
   editForm.classList.add("hidden");
 });
 
@@ -110,3 +107,10 @@ document.addEventListener("DOMContentLoaded", () => {
   displayPosts(true);
   addNewPostListener();
 });
+
+function main() {
+    displayPosts(true);
+    addNewPostListener();
+}
+
+document.addEventListener("DOMContentLoaded", main);
