@@ -9,10 +9,10 @@ let currentPostId = null;
 
 // Fetch and display all posts
 function displayPosts(DOMContentLoaded) {
- fetch(baseURL)
-.then((res) => res.json())
-.then((posts) => {
-     postList.innerHTML = "";
+  fetch(baseURL)
+    .then((res) => res.json())
+    .then((posts) => {
+      postList.innerHTML = "";
       posts.forEach((post) => {
         const postItem = document.createElement("div");
         postItem.textContent = post.title;
@@ -20,14 +20,13 @@ function displayPosts(DOMContentLoaded) {
         postList.appendChild(postItem);
       });
 
-        if (DOMContentLoaded) {
-            postDetail.innerHTML = "<p>Select a post to view details.</p>";
-        });
+      if (DOMContentLoaded) {
+        postDetail.innerHTML = "<p>Select a post to view details.</p>";
+      }
+    });
+}
 
-    }
-
-        function handlePostClick(id) {
-            function handlePostClick(id) {
+function handlePostClick(id) {
   fetch(`${baseURL}/${id}`)
     .then((res) => res.json())
     .then((post) => {
@@ -43,19 +42,71 @@ function displayPosts(DOMContentLoaded) {
         editTitle.value = post.title;
         editContent.value = post.content;
         editForm.classList.remove("hidden");
-        });
-        document.querySelector("#delete-btn").addEventListener("click", () => {
-          handleDeletePost(post.id);
-        });
+      });
+      document.querySelector("#delete-btn").addEventListener("click", () => {
+        handleDeletePost(post.id);
+      });
+    });
+}
 
-        function addNewPostListener() {
+function addNewPostListener() {
   newPostForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = new FormData(newPostForm);
     const newPost = {
       title: formData.get("title"),
       content: formData.get("content"),
-      author: formData.get("author")
+      author: formData.get("author"),
     };
-    
-    }
+
+    fetch(baseURL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newPost),
+    })
+      .then((res) => res.json())
+      .then(() => {
+        newPostForm.reset();
+        displayPosts();
+      });
+  });
+}
+
+editForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const updatedPost = {
+    title: editTitle.value,
+    content: editContent.value,
+  };
+
+  fetch(`${baseURL}/${currentPostId}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(updatedPost),
+  })
+    .then((res) => res.json())
+    .then(() => {
+      editForm.classList.add("hidden");
+      displayPosts();
+      handlePostClick(currentPostId);
+    });
+});
+
+document.querySelector("#cancel-edit-btn").addEventListener("click", () => {
+  editForm.classList.add("hidden");
+});
+
+function handleDeletePost(id) {
+  fetch(`${baseURL}/${id}`, {
+    method: "DELETE",
+  }).then(() => {
+    postDetail.innerHTML = "<p>Select a post to view details.</p>";
+    displayPosts();
+  });
+}
+
+// Initialize
+document.addEventListener("DOMContentLoaded", () => {
+  displayPosts(true);
+  addNewPostListener();
+});
