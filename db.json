@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Intrusive Thoughts",
+      "content": "This is the content of the first post.",
+      "author": "Nate"
+    },
+    {
+      "id": 2,
+      "title": "Crowded Spaces",
+      "content": "Here's some more content.",
+      "author": "Joan"
+    }
+  ]
+}
