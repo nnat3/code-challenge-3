@@ -15,7 +15,7 @@ All data is managed using a local REST API powered by [`json-server`](https://gi
 
 ~ View all blog post titles  
 ~ Click to view full details of a post  
-~ Add a new blog post via form  
+~ Add a new blog post via the form  
 ~ Edit the title and content of a post  
 ~ Delete a post  
 ~ All interactions reflect in the UI instantly  
@@ -43,11 +43,11 @@ http://localhost:3000/posts
 -Use Live Server (VS Code extension)
 -Or simply open index.html in your browser
 
--- Note on Deployment;
-This project uses json-server, which runs only on your local machine.
+-- Note on Deployment
+This project uses JSON-Server, which runs only on your local machine.
 That means hosted versions (like GitHub Pages) will not function correctly unless connected to a live API.
 
-To test this project, follow the local instructions above.
+If you would like to test this project, please follow the local instructions above.
 
 🛠️ Tech Stack
 -JavaScript
