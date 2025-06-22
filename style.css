@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 20px;
+  color: #1f2937;
+}
+
+/* Layout blocks */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#post-list, #post-detail {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#post-list {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#post-detail {
+  background-color: #f3f4f6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Post list items */
+#post-list div {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+#post-list div:hover {
+  background-color: #e0f2fe;
+}
+
+/* Forms */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+button {
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+}
+
+button.hover {
+  background-color: #2563eb;
+}
+
+#edit-btn {
+  background-color: #1a7e5c;
+  color: white;
+  padding: 8px 12px;
+  margin-right: 10px;
+}
+
+#edit-btn:hover {
+  background-color:aquamarine;
+}
+
+#delete-btn {
+  background-color: maroon;
+  color: white;
+  padding: 8px 12px;
+}
+
+#delete-btn:hover {
+  background-color: red;
+}
+
+#cancel-edit {
+  background-color: gray;
+  color: white;
+  padding: 8px 12px;
+}
+
+#cancel-edit:hover {
+  background-color: grey;
+}
+
+
+.p-2 { padding: 8px; }
+.px-4 { padding-left: 16px; padding-right: 8px; }
+.py-2 { padding-top: 8px; padding-bottom: 8px; }
+.mb-2 { margin-bottom: 8px; }
+.mb-4 { margin-bottom: 16px; }
+.ml-2 { margin-left: 8px; }
+.w-full { width: 100%; }
+.border { border: 1px solid steelblue; }
+.rounded-md { border-radius: 6px; }
+.text-white { color: white; }
+.font-bold { font-weight: bold; }
+.bg-blue-500 { background-color: turquoise; }
+.bg-blue-700:hover { background-color:darkblue; }
+.bg-gray-400 { background-color: grey; }
+.bg-gray-600:hover { background-color: dimgray; }
+
+.hidden {
+  display: none;
+}
