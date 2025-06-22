@@ -6,3 +6,8 @@ const editForm = document.querySelector("#edit-post-form");
 const editTitle = document.querySelector("#edit-title");
 const editContent = document.querySelector("#edit-content");
 let currentPostId = null;
+
+// Fetch and display all posts
+function () {
+    fetch (baseURL)
+}
