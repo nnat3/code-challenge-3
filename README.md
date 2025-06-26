@@ -1,6 +1,6 @@
  Simple Blog/Post Manager
 
-This is a basic blog management web application built with vanilla JavaScript, HTML, and CSS. It allows users to:
+This is a basic blog management web application built with  JavaScript, HTML, and CSS. It allows users to:
 
 - View all blog posts
 - See post details
