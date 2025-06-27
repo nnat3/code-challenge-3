@@ -10,7 +10,7 @@ This is a basic blog management web application built with  JavaScript, HTML, an
 
 All data is managed using a local REST API powered by [`json-server`](https://github.com/typicode/json-server).
 
-##Features
+## Features
 
 ~ View all blog post titles  
 ~ Click to view full details of a post  
@@ -59,10 +59,13 @@ If you would like to test this project, please follow the local instructions abo
 -json-server
 
 _For any suggestions, reach out to:_
+
 _Email_: natekungu857@gmail.com
 
 _Authored by Neathan Kungu_
 Github: @nnat3
+
+# License
 
 
 
