@@ -1,4 +1,4 @@
- Simple Blog/Post Manager
+# Simple Blog/Post Manager
 
 This is a basic blog management web application built with  JavaScript, HTML, and CSS. It allows users to:
 
@@ -10,8 +10,7 @@ This is a basic blog management web application built with  JavaScript, HTML, an
 
 All data is managed using a local REST API powered by [`json-server`](https://github.com/typicode/json-server).
 
-
- Features
+##Features
 
 ~ View all blog post titles  
 ~ Click to view full details of a post  
@@ -22,7 +21,7 @@ All data is managed using a local REST API powered by [`json-server`](https://gi
 
  How to Run This Project Locally
 
- 1. Clone the Repository
+1. Clone the Repository
 >```bash
 >git clone https://github.com/nnat3/code-challenge-3.git
 >cd code-challenge-3
@@ -43,13 +42,14 @@ This will start your API at:
 -Use Live Server (VS Code extension)
 -Or simply open index.html in your browser
 
--- Note on Deployment
-This project uses JSON-Server, which runs only on your local machine.
-That means hosted versions (like GitHub Pages) will not function well unless connected to a live API.
+_Note on Deployment_
+***This project uses JSON-Server, which runs only on your local machine.
+That means hosted versions (like GitHub Pages) will not function well unless connected to a live API.***
 
 If you would like to test this project, please follow the local instructions above.
 
-##Tech Stack
+## Tech Stack
+
 -JavaScript
 
 -HTML5
