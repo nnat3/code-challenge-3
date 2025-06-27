@@ -23,21 +23,21 @@ All data is managed using a local REST API powered by [`json-server`](https://gi
  How to Run This Project Locally
 
  1. Clone the Repository
-```bash
-git clone https://github.com/nnat3/code-challenge-3.git
-cd code-challenge-3
+>```bash
+>git clone https://github.com/nnat3/code-challenge-3.git
+>cd code-challenge-3
 
 2. Install JSON Server
-```bash
-npm install -g json-server
+>```bash
+>npm install -g json-server
 
 3. Start your Backend
-```bash
-json-server db.json
+>```bash
+>json-server db.json
 
 This will start your API at:
-```bash
-http://localhost:3000/posts
+>```bash
+>http://localhost:3000/posts
 
 4. Open the Frontend
 -Use Live Server (VS Code extension)
@@ -49,7 +49,7 @@ That means hosted versions (like GitHub Pages) will not function well unless con
 
 If you would like to test this project, please follow the local instructions above.
 
-🛠️ Tech Stack
+##Tech Stack
 -JavaScript
 
 -HTML5
@@ -58,10 +58,11 @@ If you would like to test this project, please follow the local instructions abo
 
 -json-server
 
-Author
-Neathan Kungu
-GitHub @nnat3
+_For any suggestions, reach out to:_
+_Email_: natekungu857@gmail.com
 
+_Authored by Neathan Kungu_
+Github: @nnat3
 
 
 
