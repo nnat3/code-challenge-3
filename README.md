@@ -24,6 +24,8 @@ All data is managed using a local REST API powered by [`json-server`](https://gi
 1. Clone the Repository
 >```bash
 >git clone https://github.com/nnat3/code-challenge-3.git
+then;
+>```bash
 >cd code-challenge-3
 
 2. Install JSON Server
