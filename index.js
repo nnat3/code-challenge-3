@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:3000/posts";
+const baseURL = "https://code-challenge-3-k0xv.onrender.com/posts";
 const postList = document.querySelector("#post-list");
 const postDetail = document.querySelector("#post-detail");
 const newPostForm = document.querySelector("#new-post-form");
@@ -107,10 +107,3 @@ document.addEventListener("DOMContentLoaded", () => {
   displayPosts(true);
   addNewPostListener();
 });
-
-function main() {
-    displayPosts(true);
-    addNewPostListener();
-}
-
-document.addEventListener("DOMContentLoaded", main);
